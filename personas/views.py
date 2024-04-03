@@ -17,3 +17,7 @@ def agregar_persona(request):
     else:
         form = PersonaForm()
     return render(request, 'personas/agregar_persona.html', {'form': form})
+
+
+def home(request):
+    return render(request, 'portfolio/index.html')

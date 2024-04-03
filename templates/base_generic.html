@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}
+    <title>Título por defecto</title>
+    {% endblock %}
+</head>
+<body>
+{% block sidebar %}
+<!-- Aquí puedes insertar contenido de barra lateral que será el mismo en todas las páginas -->
+{% endblock %}
+{% block content %}
+<!-- Aquí va el contenido principal de la página, que será diferente para cada página -->
+{% endblock %}
+</body>
+</html>

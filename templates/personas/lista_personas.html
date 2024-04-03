@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h2>Lista de Personas</h2>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+    {% for persona in personas %}
+    <tr>
+        <td>{{ persona.nombre }}</td>
+        <td>{{ persona.apellido }}</td>
+        <td>{{ persona.edad }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="{% url 'agregar_persona' %}">Agregar Persona</a>
+{% endblock %}
